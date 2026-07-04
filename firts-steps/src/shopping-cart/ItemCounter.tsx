@@ -1,25 +1,56 @@
+import { useState } from "react";
+
+// import './itemCouter.css'
+import styles from './itemCouter.module.css';
+
 interface Props {
-    nombre: string; 
-    cantidad?: number;
+  nombre: string;
+  cantidad?: number;
 }
 
+export const ItemCounter = ({ nombre, cantidad = 1}: Props) => {
 
-const ItemCounter = ({nombre, cantidad}:Props) => {
+  // useState cambia estado a propiedades del formulario
+  const [count, setCount] = useState(cantidad);
+
+  const handleSum = () => {
+    console.log("Sumando");
+    setCount(count + 1);
+  }
+
+  const handleRes = () => {
+    console.log("Restando");
+    if(count == 1 ){
+      return;
+    }
+    setCount(count - 1);
+  }
+
+
   return (
-    < section style={{
-        display:'flex',
-        alignItems: 'center',
-        gap:10,
-        marginTop:10
-    }}>
-    
-    <span style={{
-        width:100,
+    < section className={styles.itemRow}
+    // style={{
+    //   display: 'flex',
+    //   alignItems: 'center',
+    //   gap: 10,
+    //   marginTop: 10
+   // }}
+    >
 
-    }}>{nombre}</span>
-    <button>+1</button>
-    <span>{cantidad}</span>
-    <button>-1</button>
+      <span className={styles ['item-text']}  style={{
+        color: count == 1? 'red' : 'black'
+      }}>{nombre}</span>
+      <button
+        onClick={() => {
+          handleSum();
+        }}
+      >+1</button>
+      <span> {count} </span>
+      <button
+        onClick={() => {
+          handleRes();
+        }}
+      >-1</button>
     </section>
   )
 }
