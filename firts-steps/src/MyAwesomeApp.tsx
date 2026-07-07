@@ -24,7 +24,7 @@ export function MyAwesomeApp() {
 
     return (
         <>
-            <h1>{nombre}</h1>
+            <h1 data-testid='nombre'>{nombre}</h1>
             <h3>{apellido}</h3>
 
             <p>{juegos.join(',')}</p>

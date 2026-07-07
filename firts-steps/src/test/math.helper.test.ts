@@ -26,7 +26,7 @@ describe('suma', () => {
         //! 2. Act
         const result = suma(a, b);
         //! 3. Assert
-        console.log(result)
+       //console.log(result)
         expect(result).toBe(a + b);
 
 
@@ -45,7 +45,7 @@ describe('resta', () => {
         //! 2. Act
         const result = resta(a, b);
         //! 3. Assert
-        console.log(result)
+      //  console.log(result)
         expect(result).toBe(a - b);
 
 
@@ -59,7 +59,7 @@ describe('resta', () => {
         //! 2. Act
         const result = resta(a, b);
         //! 3. Assert
-        console.log(result)
+       // console.log(result)
         expect(result).toBe(a - b);
 
 
@@ -78,7 +78,7 @@ describe('multiplicacion', () => {
          //! 2. Act
          const result = multiplicacion(a, b);
          //! 3. Assert
-          console.log(result)
+       //   console.log(result)
          expect(result).toBe(a * b);
 
 
@@ -92,7 +92,7 @@ describe('multiplicacion', () => {
          //! 2. Act
          const result = multiplicacion(a, b);
          //! 3. Assert
-          console.log(result)
+        //  console.log(result)
          expect(result).toBe(a * b);
 
 
@@ -106,7 +106,7 @@ describe('multiplicacion', () => {
          //! 2. Act
          const result = multiplicacion(a, b);
          //! 3. Assert
-          console.log(result)
+        //  console.log(result)
          expect(result).toBe(a * b);
 
 
