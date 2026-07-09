@@ -23,11 +23,11 @@ const direcciones = {
 export function MyAwesomeApp() {
 
     return (
-        <>
+        <div data-testid='div1'>
             <h1 data-testid='nombre'>{nombre}</h1>
             <h3>{apellido}</h3>
 
-            <p>{juegos.join(',')}</p>
+            <p className="mi-clase">{juegos.join(',')}</p>
             <p>{2 + 2}</p>
 
             <h1>{activo ? 'Activo' : 'No activo'}</h1>
@@ -36,6 +36,6 @@ export function MyAwesomeApp() {
                 style={estilo}>
 
                 {JSON.stringify(direcciones)}</h2>
-        </>
+        </div>
     )
 }
