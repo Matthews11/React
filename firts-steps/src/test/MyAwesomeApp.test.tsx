@@ -32,4 +32,13 @@ describe('MyAwesomeApp', () => {
 
 
     });
+
+
+    test('snapshot',()=>{
+        render(<MyAwesomeApp></MyAwesomeApp>);
+
+        // expect(container).toMatchSnapshot();
+        expect(screen.getByTestId('div1')).toMatchSnapshot();
+
+    });
 });
