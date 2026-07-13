@@ -37,7 +37,7 @@ export const ItemCounter = ({ nombre, cantidad = 1}: Props) => {
    // }}
     >
 
-      <span className={styles ['item-text']}  style={{
+      <span data-testid="CS" className={styles ['item-text']}  style={{
         color: count == 1? 'red' : 'black'
       }}>{nombre}</span>
       <button
@@ -45,7 +45,7 @@ export const ItemCounter = ({ nombre, cantidad = 1}: Props) => {
           handleSum();
         }}
       >+1</button>
-      <span> {count} </span>
+      <span data-testid="spa"> {count} </span>
       <button
         onClick={() => {
           handleRes();
