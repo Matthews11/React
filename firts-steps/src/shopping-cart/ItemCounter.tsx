@@ -37,7 +37,8 @@ export const ItemCounter = ({ nombre, cantidad = 1}: Props) => {
    // }}
     >
 
-      <span data-testid="CS" className={styles ['item-text']}  style={{
+      <span data-testid="CS" className={styles ['item-text']}  
+      style={{
         color: count == 1? 'red' : 'black'
       }}>{nombre}</span>
       <button
