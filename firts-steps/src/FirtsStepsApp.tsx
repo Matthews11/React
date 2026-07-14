@@ -20,8 +20,9 @@ export function FirstStepsApp() {
             <ItemCounter nombre="NINTENDO SWITCH 2" cantidad={3}></ItemCounter>
             <ItemCounter nombre="SUPER SMASH" cantidad={4}></ItemCounter>
             <ItemCounter nombre="PRO CONTROLLER" cantidad={1}></ItemCounter>>> */}
-
-            {
+            
+            <h1>Carrito de compras</h1>
+            {  
                 itemInCart.map( ({productName,cantidad}) => (
                     <ItemCounter key={productName} nombre={productName} cantidad={cantidad}></ItemCounter>
                 ) )
