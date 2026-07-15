@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest"
-import { multiplicacion, resta, suma } from "../helpers/math.helper";
+import { division, multiplicacion, resta, suma } from "../helpers/math.helper";
 
 
 
@@ -108,6 +108,20 @@ describe('multiplicacion', () => {
          //! 3. Assert
         //  console.log(result)
          expect(result).toBe(a * b);
+
+
+     });
+
+     test('probando division valores positivos', () => {
+
+        //! 1. Arrange
+        const a = 239394949999999999999999990999999;
+        const b = 1000000097622342364527834623324234;
+         //! 2. Act
+         const result = division(a, b);
+         //! 3. Assert
+        //  console.log(result)
+         expect(result).toBe(a / b);
 
 
      });
